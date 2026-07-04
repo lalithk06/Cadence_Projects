@@ -1,0 +1,247 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 12.1.0.347.isr3 32bit -- 10 Jan 2013
+Copyright (C) 1989-2012 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Protected by U.S. Patents: 
+        5,610,847; 5,790,436; 5,812,431; 5,859,785; 5,949,992; 5,987,238; 
+        6,088,523; 6,101,323; 6,151,698; 6,181,754; 6,260,176; 6,278,964; 
+        6,349,272; 6,374,390; 6,493,849; 6,504,885; 6,618,837; 6,636,839; 
+        6,778,025; 6,832,358; 6,851,097; 6,928,626; 7,024,652; 7,035,782; 
+        7,085,700; 7,143,021; 7,493,240; 7,571,401.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: buet   Host: cadence   HostID: 7F0100   PID: 6146
+Memory  available: 1.8968 GB  physical: 3.0504 GB
+CPU Type: AMD Ryzen 7 6800H with Radeon Graphics         
+          Processor PhysicalID CoreID Frequency
+              0         0        0     3193.9
+              1         0        1     3193.9
+              2         1        0     3193.9
+              3         1        1     3193.9
+
+
+Simulating `input.scs' on cadence at 2:09:03 PM, Sat Jul 4, 2026 (process id: 6146).
+Current working directory: /home/buet/simulation/inverter_test/spectre/schematic/netlist.
+Command line:
+    /home/buet/cadence/MMSIM121/tools.lnx86/spectre/bin/32bit/spectre  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre1_3295_2 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 6146
+
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/buet/simulation/inverter_test/spectre/schematic/netlist/input.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_mos.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_mos_iso.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_resistor.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/resd_va.va
+Reading link:  /home/buet/cadence/MMSIM121/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /home/buet/cadence/MMSIM121/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /home/buet/cadence/MMSIM121/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /home/buet/cadence/MMSIM121/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/rnoise_va.va
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_capacitor.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_diode.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_bipolar.scs
+
+Time for NDB Parsing: CPU = 488.925 ms, elapsed = 462.226 ms.
+Time accumulated: CPU = 488.925 ms, elapsed = 462.226 ms.
+Peak resident memory used = 32.2 Mbytes.
+
+
+Time for Elaboration: CPU = 21.997 ms, elapsed = 22.9311 ms.
+Time accumulated: CPU = 511.921 ms, elapsed = 485.341 ms.
+Peak resident memory used = 34.7 Mbytes.
+
+
+Time for EDB Visiting: CPU = 0 s, elapsed = 632.048 us.
+Time accumulated: CPU = 512.921 ms, elapsed = 486.217 ms.
+Peak resident memory used = 35 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2477): I0.PM0: `Rds' = 1.56313 uOhm is less than 0.001. Set to 0.
+
+
+Circuit inventory:
+              nodes 3
+            bsim3v3 2     
+            vsource 2     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2477): I0.PM0: `Rds' = 1.56313 uOhm is less than 0.001. Set to 0.
+
+
+Time for parsing: CPU = 2 ms, elapsed = 4.94504 ms.
+Time accumulated: CPU = 515.921 ms, elapsed = 491.329 ms.
+Peak resident memory used = 35.8 Mbytes.
+
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre1_3295_2, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 50 ns)
+************************************************
+DC simulation time: CPU = 0 s, elapsed = 344.992 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 50 ns
+    step = 50 ps
+    maxstep = 1 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+    tran: time = 1.411 ns    (2.82 %), step = 171.2 ps     (342 m%)
+    tran: time = 4.33 ns     (8.66 %), step = 1 ns            (2 %)
+    tran: time = 6.33 ns     (12.7 %), step = 1 ns            (2 %)
+    tran: time = 9.33 ns     (18.7 %), step = 1 ns            (2 %)
+    tran: time = 11.26 ns    (22.5 %), step = 112.6 ps     (225 m%)
+    tran: time = 14.04 ns    (28.1 %), step = 924.5 ps     (1.85 %)
+    tran: time = 17.04 ns    (34.1 %), step = 1 ns            (2 %)
+    tran: time = 19.04 ns    (38.1 %), step = 1 ns            (2 %)
+    tran: time = 21.37 ns    (42.7 %), step = 152.5 ps     (305 m%)
+    tran: time = 24.13 ns    (48.3 %), step = 1 ns            (2 %)
+    tran: time = 27.13 ns    (54.3 %), step = 1 ns            (2 %)
+    tran: time = 29.13 ns    (58.3 %), step = 1 ns            (2 %)
+    tran: time = 31.29 ns    (62.6 %), step = 132.2 ps     (264 m%)
+    tran: time = 34.66 ns    (69.3 %), step = 1 ns            (2 %)
+    tran: time = 36.66 ns    (73.3 %), step = 1 ns            (2 %)
+    tran: time = 39.33 ns    (78.7 %), step = 671.1 ps     (1.34 %)
+    tran: time = 41.41 ns    (82.8 %), step = 172.8 ps     (346 m%)
+    tran: time = 44.34 ns    (88.7 %), step = 1 ns            (2 %)
+    tran: time = 46.34 ns    (92.7 %), step = 1 ns            (2 %)
+    tran: time = 49.17 ns    (98.3 %), step = 828.4 ps     (1.66 %)
+Number of accepted tran steps =             198
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 379.086 us.
+Intrinsic tran analysis time:    CPU = 11.998 ms, elapsed = 23.4451 ms.
+Total time required for tran analysis `tran': CPU = 13.998 ms, elapsed = 25.9581 ms.
+Time accumulated: CPU = 532.918 ms, elapsed = 574.77 ms.
+Peak resident memory used = 37.2 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 6 iterations.
+Total time required for dc analysis `dcOp': CPU = 2 ms, elapsed = 2.8131 ms.
+Time accumulated: CPU = 544.916 ms, elapsed = 588.886 ms.
+Peak resident memory used = 37.4 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+**************************************
+DC Analysis `dc': V0:dc = (0 V -> 1 V)
+**************************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: dc = 40 mV          (4 %), step = 20 mV           (2 %)
+    dc: dc = 60 mV          (6 %), step = 20 mV           (2 %)
+    dc: dc = 80 mV          (8 %), step = 20 mV           (2 %)
+    dc: dc = 100 mV        (10 %), step = 20 mV           (2 %)
+    dc: dc = 120 mV        (12 %), step = 20 mV           (2 %)
+    dc: dc = 140 mV        (14 %), step = 20 mV           (2 %)
+    dc: dc = 160 mV        (16 %), step = 20 mV           (2 %)
+    dc: dc = 180 mV        (18 %), step = 20 mV           (2 %)
+    dc: dc = 200 mV        (20 %), step = 20 mV           (2 %)
+    dc: dc = 220 mV        (22 %), step = 20 mV           (2 %)
+    dc: dc = 240 mV        (24 %), step = 20 mV           (2 %)
+    dc: dc = 260 mV        (26 %), step = 20 mV           (2 %)
+    dc: dc = 280 mV        (28 %), step = 20 mV           (2 %)
+    dc: dc = 300 mV        (30 %), step = 20 mV           (2 %)
+    dc: dc = 320 mV        (32 %), step = 20 mV           (2 %)
+    dc: dc = 340 mV        (34 %), step = 20 mV           (2 %)
+    dc: dc = 360 mV        (36 %), step = 20 mV           (2 %)
+    dc: dc = 380 mV        (38 %), step = 20 mV           (2 %)
+    dc: dc = 400 mV        (40 %), step = 20 mV           (2 %)
+    dc: dc = 420 mV        (42 %), step = 20 mV           (2 %)
+    dc: dc = 440 mV        (44 %), step = 20 mV           (2 %)
+    dc: dc = 460 mV        (46 %), step = 20 mV           (2 %)
+    dc: dc = 480 mV        (48 %), step = 20 mV           (2 %)
+    dc: dc = 500 mV        (50 %), step = 20 mV           (2 %)
+    dc: dc = 520 mV        (52 %), step = 20 mV           (2 %)
+    dc: dc = 540 mV        (54 %), step = 20 mV           (2 %)
+    dc: dc = 560 mV        (56 %), step = 20 mV           (2 %)
+    dc: dc = 580 mV        (58 %), step = 20 mV           (2 %)
+    dc: dc = 600 mV        (60 %), step = 20 mV           (2 %)
+    dc: dc = 620 mV        (62 %), step = 20 mV           (2 %)
+    dc: dc = 640 mV        (64 %), step = 20 mV           (2 %)
+    dc: dc = 660 mV        (66 %), step = 20 mV           (2 %)
+    dc: dc = 680 mV        (68 %), step = 20 mV           (2 %)
+    dc: dc = 700 mV        (70 %), step = 20 mV           (2 %)
+    dc: dc = 720 mV        (72 %), step = 20 mV           (2 %)
+    dc: dc = 740 mV        (74 %), step = 20 mV           (2 %)
+    dc: dc = 760 mV        (76 %), step = 20 mV           (2 %)
+    dc: dc = 780 mV        (78 %), step = 20 mV           (2 %)
+    dc: dc = 800 mV        (80 %), step = 20 mV           (2 %)
+    dc: dc = 820 mV        (82 %), step = 20 mV           (2 %)
+    dc: dc = 840 mV        (84 %), step = 20 mV           (2 %)
+    dc: dc = 860 mV        (86 %), step = 20 mV           (2 %)
+    dc: dc = 880 mV        (88 %), step = 20 mV           (2 %)
+    dc: dc = 900 mV        (90 %), step = 20 mV           (2 %)
+    dc: dc = 920 mV        (92 %), step = 20 mV           (2 %)
+    dc: dc = 940 mV        (94 %), step = 20 mV           (2 %)
+    dc: dc = 960 mV        (96 %), step = 20 mV           (2 %)
+    dc: dc = 980 mV        (98 %), step = 20 mV           (2 %)
+    dc: dc = 1 V          (100 %), step = 20 mV           (2 %)
+Total time required for dc analysis `dc': CPU = 10.998 ms, elapsed = 21.3509 ms.
+Time accumulated: CPU = 561.913 ms, elapsed = 618.272 ms.
+Peak resident memory used = 37.5 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (2:17:30 PM, Sat Jul 4, 2026):
+Time used: CPU = 711 ms, elapsed = 507 s (8m  27.2s), util. = 140e-03%.
+Time spent in licensing: elapsed = 391 ms.
+Peak memory used = 37.5 Mbytes.
+Simulation started at: 2:09:03 PM, Sat Jul 4, 2026, ended at: 2:17:30 PM, Sat Jul 4, 2026, with elapsed time (wall clock): 507 s (8m  27.2s).
+spectre completes with 0 errors, 3 warnings, and 1 notice.

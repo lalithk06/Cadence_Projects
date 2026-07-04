@@ -1,0 +1,27 @@
+simulator( 'spectre )
+design(	 "/home/buet/simulation/inverter_test/spectre/schematic/netlist/netlist")
+resultsDir( "/home/buet/simulation/inverter_test/spectre/schematic" )
+modelFile( 
+    '("/home/buet/cadence/gpdk090_v4.6/libs.oa22/gpdk090/../../models/spectre/gpdk090.scs" "NN")
+)
+analysis('tran ?stop "500m"  ?errpreset "moderate"  )
+analysis('dc ?saveOppoint t  ?dev "/V0"  ?param "dc"  
+		?start "0"  ?stop "1"  )
+envOption(
+	'analysisOrder  list("tran" "dc") 
+)
+temp( 27 ) 
+run()
+selectResult( 'dc )
+plot(getData("/Vout") getData("/net5") )
+selectResult( 'tran )
+plot(getData("/Vout") getData("/net5") )
+modelFile( 
+    '("/home/buet/cadence/gpdk090_v4.6/libs.oa22/gpdk090/../../models/spectre/gpdk090.scs" "NN")
+)
+analysis('tran ?stop "50n"  )
+run()
+selectResult( 'dc )
+plot(getData("/net5") getData("/Vout") )
+selectResult( 'tran )
+plot(getData("/net5") getData("/Vout") )

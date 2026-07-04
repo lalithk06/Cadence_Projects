@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"CMOS_Inverter\" \"inverter_test\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Jul  4 14:09:01 2026"
+"title" ""
+"analysisList" "()"
+END

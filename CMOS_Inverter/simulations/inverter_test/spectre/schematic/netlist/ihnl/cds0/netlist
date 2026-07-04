@@ -1,0 +1,6 @@
+    NM0 (Vout Vin GND GND) gpdk090_nmos1v w=(2u) l=100n as=560f ad=560f \
+        ps=4.56u pd=4.56u m=(1)*(1) simM=(1)*(1)
+    PM0 (Vout Vin VDD VDD) gpdk090_pmos1v w=(5u) l=100n as=1.4p ad=1.4p \
+        ps=10.56u pd=10.56u m=(1)*(1) simM=(1)*(1)
+ends inverter
+// End of subcircuit definition.

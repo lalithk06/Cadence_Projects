@@ -1,0 +1,8 @@
+
+// Library name: CMOS_Inverter
+// Cell name: inverter_test
+// View name: schematic
+I0 (0 net4 net5 Vout) inverter
+V0 (net5 0) vsource type=pulse val0=0 val1=1 period=20n delay=0 rise=1n \
+        fall=1n width=10n
+V1 (net4 0) vsource dc=1 type=dc

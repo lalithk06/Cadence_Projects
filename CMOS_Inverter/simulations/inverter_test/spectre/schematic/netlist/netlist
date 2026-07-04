@@ -1,0 +1,19 @@
+
+// Library name: CMOS_Inverter
+// Cell name: inverter
+// View name: schematic
+subckt inverter GND VDD Vin Vout
+    NM0 (Vout Vin GND GND) gpdk090_nmos1v w=(2u) l=100n as=560f ad=560f \
+        ps=4.56u pd=4.56u m=(1)*(1) simM=(1)*(1)
+    PM0 (Vout Vin VDD VDD) gpdk090_pmos1v w=(5u) l=100n as=1.4p ad=1.4p \
+        ps=10.56u pd=10.56u m=(1)*(1) simM=(1)*(1)
+ends inverter
+// End of subcircuit definition.
+
+// Library name: CMOS_Inverter
+// Cell name: inverter_test
+// View name: schematic
+I0 (0 net4 net5 Vout) inverter
+V0 (net5 0) vsource type=pulse val0=0 val1=1 period=20n delay=0 rise=1n \
+        fall=1n width=10n
+V1 (net4 0) vsource dc=1 type=dc
