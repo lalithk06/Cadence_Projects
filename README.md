@@ -7,24 +7,42 @@ A collection of IC design and layout projects built using **Cadence Virtuoso**. 
 ```
 Cadence_Projects/
 ├── CMOS_Inverter/
-│   ├── design/
-│   ├── docs/
-│   ├── reports/
-│   ├── screenshots/
-│   └── simulations/
 ├── (future project folders...)
 └── README.md
 ```
 
 Each project subfolder follows a consistent internal structure:
 
-| Folder         | Contents                                                        |
-|----------------|------------------------------------------------------------------|
-| `design/`      | Cadence Virtuoso schematic and layout cellviews / library files |
-| `docs/`        | Design notes, specifications, theory, and reference material     |
-| `reports/`     | DRC, LVS, and post-layout simulation reports                     |
-| `screenshots/` | Schematic/layout images for quick visual reference                |
-| `simulations/` | Testbenches, simulation setups, and result plots/data             |
+<div align="center">
+
+<table>
+  <tr>
+    <th>Folder</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><b>design/</b></td>
+    <td>Cadence Virtuoso design database (schematic, layout, symbol, extracted views)</td>
+  </tr>
+  <tr>
+    <td><b>docs/</b></td>
+    <td>Design specifications, theory, calculations, and notes</td>
+  </tr>
+  <tr>
+    <td><b>reports/</b></td>
+    <td>DRC, LVS, RCX, and post-layout verification reports</td>
+  </tr>
+  <tr>
+    <td><b>screenshots/</b></td>
+    <td>Schematic, layout, waveforms, and verification images</td>
+  </tr>
+  <tr>
+    <td><b>simulations/</b></td>
+    <td>Testbenches, Spectre netlists, ADE setups, and simulation outputs</td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
@@ -49,8 +67,8 @@ Each project subfolder follows a consistent internal structure:
 ## Projects
 
 | Project | Description | Status |
-|---|---|---|
-| [CMOS_Inverter](./CMOS_Inverter) | Basic CMOS inverter — schematic, layout, and DRC/LVS verification | In Progress |
+|:--------:|:-----------:|:------:|
+| [**CMOS Inverter**](./CMOS_Inverter) | Complete custom IC design flow from schematic to post-layout verification using Cadence Virtuoso and Spectre | 🚧 In Progress |
 
 ----
 ## Purpose
